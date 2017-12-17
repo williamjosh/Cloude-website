@@ -27,15 +27,94 @@ a {
 div.wrapper {
   margin: 0px 20px; }
 
+h1 {
+  font-weight: 300;
+  font-size: 40px; }
+
+a.hyperlinks {
+  color: #272727;
+  font-size: 25px;
+  border-bottom: 2px solid yellow; }
+
+.container {
+  width: 100%;
+  margin: auto;
+  padding-top: 4%;
+  padding-bottom: 4%; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.row::after {
+  display: table;
+  clear: both;
+  content: ""; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
 div.intro {
   text-align: center;
-  margin-top: 30vh; }
-  div.intro h1 {
+  margin-top: 30vh;
+  margin-bottom: 200px; }
+  div.intro h1.intro-title {
     font-size: 24px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    font-weight: 800; }
   div.intro p {
     font-size: 40px;
     font-weight: 300; }
+
+div.team {
+  background-color: #F9F9F9;
+  margin: 100px 0px;
+  text-align: center;
+  padding: 40px 200px; }
+  div.team div.profiles {
+    margin: 30px 0px; }
+    div.team div.profiles img:hover {
+      opacity: 0.8; }
 
 nav {
   background-color: #272727;
@@ -149,7 +228,7 @@ nav {
 @media only screen and (max-width: 537px) {
   div.intro {
     margin-top: 30vh; }
-    div.intro h1 {
+    div.intro h1.intro-title {
       font-size: 25px; }
     div.intro p {
       font-size: 30px; }
@@ -157,7 +236,7 @@ nav {
         display: none; } }
 
 @media only screen and (max-width: 435px) {
-  div.intro h1 {
+  div.intro h1.intro-title {
     font-size: 20px; }
   div.intro p {
     font-size: 30px; } }
@@ -167,7 +246,7 @@ nav {
     padding: 15px 50px; } }
 
 @media only screen and (min-width: 1500px) {
-  div.intro h1 {
+  div.intro h1.intro-title {
     font-size: 50px; }
   div.intro p {
     font-size: 70px; }
@@ -175,3 +254,41 @@ nav {
     padding: 35px 120px; }
     div.intro .btn-lg a {
       font-size: 20px; } }
+
+@media only screen and (max-width: 1226px) {
+  div.team {
+    padding: 40px 0px; } }
+
+@media only screen and (max-width: 658px) {
+  div.team {
+    padding: 40px 100px; } }
+
+@media only screen and (max-width: 619px) {
+  div.team {
+    padding: 40px 90px; } }
+
+@media only screen and (max-width: 599px) {
+  div.team {
+    padding: 40px 80px; } }
+
+@media only screen and (max-width: 580px) {
+  div.team {
+    padding: 40px 70px; } }
+
+@media only screen and (max-width: 580px) {
+  div.team {
+    padding: 40px 0px; } }
+
+@media only screen and (max-width: 400px) {
+  div.team h1 {
+    font-size: 30px; } }
+
+@media only screen and (max-width: 420px) {
+  div.team div.profiles {
+    height: 600px;
+    overflow: hidden; } }
+
+@media only screen and (max-width: 266px) {
+  div.team img {
+    width: 266px;
+    height: 266px; } }

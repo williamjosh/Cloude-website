@@ -6,3 +6,8 @@ function dropdown() {
 		menu.className = "topnav"
 	}
 }
+
+function showMore() {
+	var expand = document.getElementsByClassName("profiles");
+	expand.style.height = "3000px"
+}
