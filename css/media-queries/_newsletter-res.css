@@ -1,0 +1,21 @@
+@media only screen and (max-width: 519px) {
+  div.newsletter input {
+    padding: 10px 100px 10px 10px; } }
+
+@media only screen and (max-width: 428px) {
+  div.newsletter input {
+    padding: 10px 80px 10px 10px; } }
+
+@media only screen and (max-width: 380px) {
+  div.newsletter input {
+    padding: 10px 30px 10px 10px; } }
+
+@media only screen and (max-width: 334px) {
+  div.newsletter input {
+    padding: 10px 10px 10px 10px; }
+  div.newsletter button {
+    padding: 12px 10px; } }
+
+@media only screen and (max-width: 266px) {
+  div.newsletter {
+    margin-top: 50px; } }
