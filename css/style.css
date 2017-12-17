@@ -36,6 +36,12 @@ a.hyperlinks {
   font-size: 25px;
   border-bottom: 2px solid yellow; }
 
+li.check {
+  color: #6AC259; }
+
+li.uncheck {
+  color: #F05228; }
+
 .container {
   width: 100%;
   margin: auto;
@@ -152,6 +158,30 @@ div.benefits-cards {
         div.benefits-cards ul li:hover div.overlay {
           display: block; }
 
+div.pricing {
+  background-color: #F9F9F9;
+  text-align: center; }
+  div.pricing div.pricing-cards {
+    width: 31.3%;
+    border: 6px solid rgba(237, 237, 237, 0.77);
+    margin: 0px 1%;
+    padding: 0px 20px;
+    background-color: #FFFFFF; }
+    div.pricing div.pricing-cards ul {
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      div.pricing div.pricing-cards ul li {
+        line-height: 35px; }
+    div.pricing div.pricing-cards ul.pricing-features {
+      text-align: left; }
+      div.pricing div.pricing-cards ul.pricing-features li {
+        font-size: 15px; }
+    div.pricing div.pricing-cards ul.pricing-markings {
+      float: right; }
+      div.pricing div.pricing-cards ul.pricing-markings li {
+        width: 1%; }
+
 nav {
   background-color: #272727;
   overflow: hidden;
@@ -243,6 +273,23 @@ nav {
     font-weight: 600;
     font-size: 16px;
     letter-spacing: 2px; }
+
+.btn-pricing {
+  margin: 30px 0px;
+  background-color: black;
+  border: 0px;
+  padding: 15px 30px; }
+  .btn-pricing:hover {
+    border: 1px solid #000000;
+    background-color: #F9F9F9;
+    -webkit-box-shadow: 0px 2px 67px -9px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 67px -9px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 67px -9px rgba(0, 0, 0, 0.3); }
+    .btn-pricing:hover a {
+      color: #000000;
+      -webkit-transition: all 0.4s linear;
+      -o-transition: all 0.4s linear;
+      transition: all 0.4s linear; }
 
 @media only screen and (max-width: 700px) {
   nav {
@@ -458,3 +505,11 @@ nav {
     div.benefits-cards ul li button {
       padding: 15px 10px;
       margin-top: 20px; } }
+
+@media only screen and (max-width: 1077px) {
+  div.pricing div.pricing-cards {
+    width: 100%; } }
+
+@media only screen and (max-width: 353px) {
+  div.pricing h1 {
+    font-size: 30px; } }
